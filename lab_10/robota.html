@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Завдання</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --main-bg-color: #303131; 
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: var(--main-bg-color);
+      transition: background-color 0.5s ease;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-around;
+      background-color: #747373;
+      padding: 15px;
+    
+    }
+
+    nav a {
+      color: rgb(8, 8, 8);
+      text-decoration: none;
+      padding: 8px 16px;
+      transition: background-color 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #d7d4d4;
+    }
+
+    .club-title {
+      text-align: center;
+      font-size: 36px;
+      margin: 20px 0;
+      color: #737474;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .photo {
+      background-color: #747373;
+      flex: 1 1 150px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.3s, background-color 0.3s;
+      padding: 10px;
+    }
+
+    .photo img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .photo:hover {
+      background-color: #d4d4d4;
+      transform: scale(1.05);
+    }
+
+    .card {
+      display: flex;
+      gap: 20px;
+      background-color: #747373;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 10px;
+      align-items: center;
+    }
+
+    .card img {
+      width: 150px;
+      border-radius: 8px;
+    }
+
+    .card-content {
+      max-width: 400px;
+    }
+
+    @media (max-width: 600px) {
+      .card {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+
+    .card.second {
+      background-color: #747373;
+    }
+    .card-content.long-text {
+      max-width: 100%; 
+      flex: 1; 
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="club-title">Kladruby Royal Club</div>
+
+  <nav>
+    <a href="#">Головна</a>
+    <a href="#">Про нас</a>
+    <a href="#">Послуги</a>
+    <a href="#">Контакти</a>
+  </nav>
+
+  <div class="gallery">
+    <div class="photo"><img src="photo1.jpg" alt="Фото 1"></div>
+    <div class="photo"><img src="photo 4.jpg" alt="Фото 2"></div>
+    <div class="photo"><img src="photo 5.jpg" alt="Фото 3"></div>
+    <div class="photo"><img src="photo 6.jpg" alt="Фото 4"></div>
+  </div>
+
+  <div style="background-color: #747373; 
+    border-radius: 10px; 
+    padding: 20px; 
+    width: 100%; max-width: 1630px; 
+    margin: 20px auto; 
+    line-height: 1.6;">
+    <h2 style="text-align: center;">Кінний клуб «Kladruby Royal Club»</h2>
+    <p>Ласкаво просимо до кінного клубу «KRC» — унікального місця, де мешкають справжні перлини світу кінних порід — кладрубські коні. Це одна з найстаріших порід Європи, що бере свій початок із XVI століття в Чехії, спеціально виведена для королівських церемоній та парадних упряжок.</p>
+    <p>Наш клуб створений для тих, хто цінує шляхетність, естетику руху та гармонію у спілкуванні з кіньми. Кладрубські коні — це втілення спокою, інтелігентності й благородства. Завдяки своїй рідкісності вони не лише викликають захоплення, але й викликають повагу як культурна спадщина Європи.</p>
+    <p>У клубі «KRC» ми створили умови, які дозволяють цим унікальним тваринам жити в комфорті, розвиватися та взаємодіяти з людьми. Наші відвідувачі можуть не лише милуватися цими дивовижними кіньми, а й пройти заняття з верхової їзди, познайомитися з іпотерапією, а також дізнатися більше про історію породи та її роль у монархічних традиціях. Ми пишаємося тим, що зберігаємо і поширюємо культуру спілкування з кіньми найвищого рівня. Кожен кінь у нашому клубі має родовід, що сягає кількох століть, і є гордістю світового кіннознавства.</p>
+    <p>Запрошуємо до клубу «Kladruby Royal Club» — місця, де історія оживає у граційних рухах благородних коней.</p>
+  </div>
+  
+
+  <div class="card">
+    <img src="konyhna.webp" alt="Екскурсія по конюшні">
+    <div class="card-content long-text">
+      <h2>Екскурсія по «Kladruby Royal Club»</h2>
+      <p>Вас чекає знайомство з рідкісними кладрубськими кіньми, огляд доглянутої конюшні та мальовничої території клубу. Ви дізнаєтесь про історію породи, зможете побачити коней зблизька, спостерігати за їхньою грацією та спокоєм, доторкнутись до культури європейського кінного мистецтва. Для гостей також доступні фото-локації, можливість погодувати коней та поспілкуватись із нашими тренерами.</p>
+      <p><strong>Тривалість:</strong> 60 хвилин<br>
+      <strong>Ціна:</strong> 300 грн (дорослі), 200 грн (діти до 12 років), безкоштовно (діти до 5 років)</p>
+      <p><em>Екскурсії проводяться щодня за попереднім записом. Обов'язково приходьте в зручному одязі та з гарним настроєм!</em></p>
+    </div>
+  </div>
+  <div class="card second">
+    <img src="photo1.jpg" alt="Кінна прогулянка">
+    <div class="card-content long-text">
+      <h2>Кінні прогулянки мальовничими маршрутами</h2>
+      <p>Пориньте у світ спокою та гармонії, здійснивши прогулянку на спині благородного кладрубського коня. Маршрути пролягають через лісові стежки, відкриті поля та тихі долини, де можна відчути єдність із природою. Наші інструктори підберуть темп та напрямок з урахуванням вашого досвіду — як для новачків, так і для впевнених вершників.</p>
+      <p>Під час прогулянки ви матимете змогу відпочити від буденності, відновити внутрішню рівновагу та просто насолодитися живою красою навколо. Це не лише відпочинок, а справжня терапія — для тіла і душі.</p>
+      <p><strong>Тривалість:</strong> 30–60 хвилин (на вибір)<br>
+      <strong>Ціна:</strong> від 750 грн<br>
+      <strong>Для кого:</strong> діти, дорослі, початківці та досвідчені вершники</p>
+      <p><em>Запис обов’язковий. Усі прогулянки супроводжуються досвідченим інструктором.</em></p>
+    </div>
+  </div>
+</body>
+</html>

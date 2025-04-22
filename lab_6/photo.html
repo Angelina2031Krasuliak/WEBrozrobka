@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Лабораторна №9</title>
+  <style>
+    body.background-gradient {
+      background: linear-gradient(135deg, #0f4b41 0%, #31613a 100%);
+      background-repeat: no-repeat;
+      min-height: 200vh;
+    }
+
+    .background-example {
+      width: 500px;
+      height: 300px;
+      background-image: url('https://picsum.photos/500/300');
+      background-size: contain;
+      background-position: center;
+    }
+
+    .clip-row {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      margin: 20px;
+    }
+
+    .clip-example {
+      width: 300px;
+      height: auto;
+      clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+    }
+
+    .masked {
+      width: 300px;
+      height: auto;
+      mask-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/100px-Apple_logo_black.svg.png');
+      -webkit-mask-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/100px-Apple_logo_black.svg.png');
+      mask-repeat: no-repeat;
+      mask-position: center;
+    }
+
+    .text-mask {
+      font-size: 80px;
+      font-weight: bold;
+      background: url('https://picsum.photos/600/400') no-repeat center;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-align: center;
+    }
+
+    .animated-box {
+      width: 100px;
+      height: 100px;
+      background-color: rgb(234, 219, 15);
+      animation: moveColor 2s ease-in-out 2s infinite alternate-reverse;
+    }
+
+    @keyframes moveColor {
+      0% {
+        transform: translateX(0);
+        background-color: rgb(233, 222, 22);
+      }
+      100% {
+        transform: translateX(50px);
+        background-color: blue;
+      }
+    }
+
+    .fixed-image {
+      background-image: url('https://picsum.photos/1200/800');
+      background-position: top right;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      height: 100vh;
+    }
+
+    .spacer {
+      height: 500px;
+    }
+  </style>
+</head>
+<body class="background-gradient">
+  <div class="background-example"></div>
+
+  <div class="clip-row">
+    <img src="https://picsum.photos/300/300" alt="Обрізане зображення" class="clip-example" />
+    <div class="animated-box"></div>
+  </div>
+
+  <img src="https://picsum.photos/300/300?grayscale" alt="Масковане зображення" class="masked" />
+
+  <div class="text-mask">Мій текст</div>
+
+  <div class="fixed-image"></div>
+  <div class="spacer"></div>
+  <div class="spacer"></div>
+</body>
+</html>

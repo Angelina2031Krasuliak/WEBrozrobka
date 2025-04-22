@@ -1,13 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Продаж техніки</title>
+    <title>Книжкові огляди</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Shadows+Into+Light&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #dbbef4; 
+        html, body {
             margin: 0;
             padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: url('fon.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+        h1 {
+            font-family: 'Shadows Into Light', cursive;
+            font-size: 48px;
+            text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+            color: #080000;
+            padding: 20px 40px;
+            background-color: rgba(249, 83, 83, 0.8);
+            border: 4px solid #f11c08;
+            border-radius: 25px;
+            display: block;
+            width: fit-content;
+            margin: 30px auto;
+            text-align: center;
         }
         .container {
             display: flex;
@@ -17,63 +33,84 @@
             padding: 20px;
         }
         .item {
-            width: 300px;
-            border: 1px solid #fffefe;
+            width: 220px;
+            height: 420px;
+            outline: 5px solid #f51500;
+            border: 5px solid #f53434;
             padding: 15px;
+            margin: 10px;
             text-align: center;
-            background-color: #fffefe;
-            border-radius: 10px;
+            background-color: rgba(245, 90, 90, 0.9);
+            border-radius: 15px;
+            font-family: 'Arial', sans-serif;
+            box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.3);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
         .item img {
-            width: 100%;
-            height: 500px; 
-            object-fit: contain; 
-            border-radius: 10px;
-        }
+    width: 100%;
+    height: 240px;
+    object-fit: contain;
+    border-radius: 15px;
+}
+
         .item h3 {
-            margin: 10px 0;
+            font-family: 'Raleway', sans-serif;
             font-size: 18px;
+            margin-top: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
         }
         .item h3 a {
             text-decoration: none;
-            color: #007BFF;
+            color: #1a1a1a;
         }
         .item h3 a:hover {
             text-decoration: underline;
         }
         .item p {
-            font-size: 14px;
-            color: #080808;
+            font-family: 'Verdana', sans-serif;
+            font-size: 13px;
+            color: #000000;
+            line-height: 1.4;
         }
         .highlight {
             font-weight: bold;
-            color: red;
+            background-color: #350606;
+            padding: 3px 6px;
+            border-radius: 5px;
+            color: #f60505;
         }
     </style>
 </head>
 <body>
-    <h1 style="text-align: center;">Продаж техніки</h1>
+    <h1>Книжкові огляди</h1>
     <div class="container">
         <div class="item">
-            <img src="a35.webp" alt="Товар 1">
-            <h3><a href="https://rozetka.com.ua/ua/samsung-sm-a356blvbeuc/p422905860/" target="_blank">Samsung Galaxy A35</a></h3>
-            <p><span class="highlight">Samsung Galaxy A35</span> стильний та доступний із потужною камерою для чудових фото та надійною батареєю для тривалого використання.</span> <span class="highlight">Ідеальний вибір</span> для тих, хто шукає якість за доступною ціною!</p>
+            <img src="adeline.jpg" alt="Переслідування Аделіни">
+            <h3><a href="#">Переслідування Аделіни</a></h3>
+            <p>Аделіна, яка <span class="highlight">розслідує таємниці</span> родини після знаходження щоденника. Це приводить її до небезпечного Товариства, що займається торгівлею людьми.</p>
         </div>
         <div class="item">
-            <img src="s35ulra.webp" alt="Товар 2">
-            <h3><a href="https://rozetka.com.ua/ua/samsung-sm-s938bzkgeuc/p473275184/" target="_blank">Samsung Galaxy S25</a></h3>
-            <p><span class="highlight">Новий Samsung Galaxy S25 Ultra</span> Стильний смартфон з 6.7-дюймовим дисплеєм, потужним процесором та камерами для якісних фото.</p>
+            <img src="delina2.jpg" alt="Полювання на Аделіну">
+            <h3><a href="#">Полювання на Аделіну </a></h3>
+            <p><span class="highlight">Аделіна, викрадена </span> торговцями людьми, яка вирішує помститися за пережите з допомогою загадкового переслідувача.</p>
         </div>
         <div class="item">
-            <img src="Samsung Galaxy Flip 6.webp" alt="Товар 3">
-            <h3><a href="https://rozetka.com.ua/ua/samsung-sm-f741blbhsek/p438280412/" target="_blank">Samsung Galaxy Flip 6 </a></h3>
-            <p><span class="highlight">Якісний та стильний</span> складаний смартфон з 6.7" дисплеєм, інноваційним дизайном та потужною камерою.</p>
-        </div>
-        <div class="item">
-            <img src="Galaxy A36.webp" alt="Товар 4">
-            <h3><a href="https://rozetka.com.ua/ua/samsung-sm-a366blvgeuc/p484698844/" target="_blank">Samsung Galaxy A36 </a></h3>
-            <p><span class="highlight">Стильний</span> стильний смартфон з 6.4" дисплеєм, підтримкою 5G та потужною камерою для чітких фото. Має тривалу батарею і гарну продуктивність, що робить його чудовим вибором для повсякденного використання за  <span class="highlight">доступною ціною.</span></p>
+            <img src="molli.png" alt="Де Молі?">
+            <h3><a href="#">Де Молі?</a></h3>
+            <p><span class="highlight">Моллі, яку викрали</span> та продали в рабство її батьки. Вона намагається втекти від жахливого минулого та врятувати свою сестру.
+            </p>
         </div>
     </div>
 </body>
 </html>
+
+
+
+
+
+
+
+
+

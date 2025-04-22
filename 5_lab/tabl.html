@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Товари - Книжкові огляди</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: url('fon1.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        h1 {
+            font-family: 'Shadows Into Light', cursive;
+            font-size: 48px;
+            text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+            color: #0d0202;
+            padding: 20px 40px;
+            background-color: rgba(251, 86, 86, 0.8);
+            border: 4px solid #f91702;
+            border-radius: 25px;
+            display: block;
+            width: fit-content;
+            margin: 30px auto;
+            text-align: center;
+        }
+
+        table {
+            width: 85%;
+            margin: 40px auto;
+            border-collapse: collapse;
+            background-color: rgba(255, 255, 255, 0.95);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: center;
+            border: 1px solid #333;
+            font-family: 'Verdana', sans-serif;
+        }
+
+        th {
+            background-color: #f73232;
+            color: rgb(11, 1, 1);
+            font-weight: bold;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #f6c3c3;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f6c3c3;
+        }
+
+        tr:hover {
+            background-color: #f87b7b;
+        }
+
+        td img {
+            width: 100px;
+            border-radius: 10px;
+            margin-top: 5px;
+        }
+
+        .highlight {
+            font-weight: bold;
+            background-color: #f55;
+            padding: 2px 5px;
+            border-radius: 5px;
+        }
+
+        a:link {
+            color: #000;
+            font-style: italic;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: rgb(249, 4, 4);
+            font-style: italic;
+            text-decoration: underline;
+        }
+
+        a:hover {
+            color: #000;
+            background-color: #ffe4e4;
+            font-style: italic;
+        }
+
+        a:active {
+            color: blue;
+            background-color: #ffc4c4;
+            font-style: italic;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Книжкові огляди</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>№</th>
+                <th>Назва товару та фото</th>
+                <th>Короткий опис</th>
+                <th>Посилання</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>
+                    <strong>Переслідування Аделіни</strong><br>
+                    <img src="adeline copy.jpg" alt="Переслідування Аделіни">
+                </td>
+                <td>Аделіна, яка<span class="highlight">розслідує таємниці</span> родини після знаходження щоденника. Це приводить її до небезпечного Товариства, що займається торгівлею людьми.</td>
+                <td><a href="https://bookclub.ua/ru/catalog/books/thriller_horror_books/peresliduvannya-adelini?gad_source=1&gclid=Cj0KCQjwhr6_BhD4ARIsAH1YdjA85PJ6ArffMFV_TbHBkerP43vLMi5dne7BpHOb7JxHkFppILGFlecaAtGAEALw_wcB">Перейти</a></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>
+                    <strong>Полювання на Аделіну</strong><br>
+                    <img src="delina2.jpg" alt="Полювання на Аделіну">
+                </td>
+                <td><span class="highlight">Аделіна, викрадена </span> торговцями людьми, яка вирішує помститися за пережите з допомогою загадкового переслідувача.</td>
+                <td><a href="https://bookclub.ua/ru/catalog/books/thriller_horror_books/polyuvannya-na-adelinu?gad_source=1&gclid=Cj0KCQjwhr6_BhD4ARIsAH1YdjC25KtPdT1c2aP-2C9KPRgJYe-7GveSYOXQnrcKdkiV70EAwlpmhmgaAgKzEALw_wcB">Перейти</a></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>
+                    <strong>Де Молі?</strong><br>
+                    <img src="molli.png" alt="Де Молі?">
+                </td>
+                <td><span class="highlight">Моллі, яку викрали</span> та продали в рабство її батьки. Вона намагається втекти від жахливого минулого та врятувати свою сестру.</td>
+                <td><a href="https://bookclub.ua/ru/catalog/books/fantasy_books/de-molli?srsltid=AfmBOopY1NvYX2LCjwcWmmfX-cqMbcs1_RIC4DvgSbcDOqPPPdD-qk-C">Перейти</a></td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
