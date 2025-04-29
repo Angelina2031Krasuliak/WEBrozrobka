@@ -1,0 +1,17 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 90px 200px 150px 140px;  
+    grid-template-rows: 80px 100px 120px;
+    gap: 5px;
+    background-color: #e090f6;
+    padding: 10px;
+    max-width: 600px; 
+    margin: 0 auto;   
+  }
+  
+  .grid-container > div {
+    background-color: rgb(247, 212, 250);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 20px;
+  }
